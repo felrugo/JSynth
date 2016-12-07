@@ -1,0 +1,458 @@
+\hypertarget{classmain_1_1_o_s_c}{}\section{main.\+O\+SC Class Reference}
+\label{classmain_1_1_o_s_c}\index{main.\+O\+SC@{main.\+O\+SC}}
+
+
+Inheritance diagram for main.\+O\+SC\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain_1_1_o_s_c__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for main.\+O\+SC\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain_1_1_o_s_c__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+synchronized void \hyperlink{classmain_1_1_o_s_c_a7dc4cf1fe241cd88e0c8e4e76a223cf2}{Set\+Mode} (int sm)
+\item 
+synchronized void \hyperlink{classmain_1_1_o_s_c_a5b1d6c363df4df16fd6cd40744c10d70}{Set\+Decr} (int sd)
+\item 
+synchronized void \hyperlink{classmain_1_1_o_s_c_a944ad8d6279b5378c12c0c58fa465665}{Set\+F\+Out\+Time} (double sft)
+\item 
+double \hyperlink{classmain_1_1_o_s_c_a367d36787d80d32bb97acbcbb62404ec}{Get\+Amp} ()
+\item 
+int \hyperlink{classmain_1_1_o_s_c_aa191cdd4bb6c5057fe4f71307265d697}{Get\+Mode} ()
+\item 
+int \hyperlink{classmain_1_1_o_s_c_a719b7be131c51fdbc04830b5dbd194ae}{Get\+Decr} ()
+\item 
+double \hyperlink{classmain_1_1_o_s_c_a037f2b301a7de8f629ee590ce3c172b3}{Get\+Fout} ()
+\item 
+double \hyperlink{classmain_1_1_o_s_c_ab0fd030e37c446855b53c144194a035b}{square} (double x)
+\item 
+double \hyperlink{classmain_1_1_o_s_c_afe21605a56d6899ae580e72ee5b4cf07}{triangle} (double x)
+\item 
+double \hyperlink{classmain_1_1_o_s_c_a867dfe133e42c1ab3a03563f62d8c4a1}{saw} (double x)
+\item 
+double \hyperlink{classmain_1_1_o_s_c_a16608f6bef0ad4ddddda558f2ffce681}{Linear\+Fade\+Out} (double cet)
+\item 
+double \hyperlink{classmain_1_1_o_s_c_a8eaca900c304b41dfd1d8e2e747ebb62}{Squ\+Fade\+Out} (double cet)
+\item 
+double \hyperlink{classmain_1_1_o_s_c_ac847db01151aa5613999ac8daed804ff}{Root\+Fade\+Out} (double cet)
+\item 
+double \hyperlink{classmain_1_1_o_s_c_a129995e4961ba7e8e4c8b8c4de5da1ee}{Circ\+Fade\+Out} (double cet)
+\item 
+void \hyperlink{classmain_1_1_o_s_c_a7b6e93c3e91eebd23a9cea86becef269}{set\+Amp} (double samp)
+\item 
+synchronized byte\mbox{[}$\,$\mbox{]} \hyperlink{classmain_1_1_o_s_c_a8f2bb15946ac10c074cee1ea4fab03e0}{Read\+Audio} (Audio\+Format af)
+\item 
+synchronized void \hyperlink{classmain_1_1_o_s_c_ac2070c794fe40e23f27a1d357bd48efb}{on\+Note\+Press} (\hyperlink{classmain_1_1_note}{Note} n)
+\item 
+synchronized void \hyperlink{classmain_1_1_o_s_c_a7fd53cd80bc42d5d77161326cba5aa5f}{on\+Note\+Release} (\hyperlink{classmain_1_1_note}{Note} n)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ez az osztály felel a hanghullámok generálásáért. \begin{DoxyAuthor}{Author}
+felrugo 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\index{main\+::\+O\+SC@{main\+::\+O\+SC}!Circ\+Fade\+Out@{Circ\+Fade\+Out}}
+\index{Circ\+Fade\+Out@{Circ\+Fade\+Out}!main\+::\+O\+SC@{main\+::\+O\+SC}}
+\subsubsection[{\texorpdfstring{Circ\+Fade\+Out(double cet)}{CircFadeOut(double cet)}}]{\setlength{\rightskip}{0pt plus 5cm}double main.\+O\+S\+C.\+Circ\+Fade\+Out (
+\begin{DoxyParamCaption}
+\item[{double}]{cet}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_o_s_c_a129995e4961ba7e8e4c8b8c4de5da1ee}{}\label{classmain_1_1_o_s_c_a129995e4961ba7e8e4c8b8c4de5da1ee}
+Kör-\/menti csillapodás 
+\begin{DoxyParams}{Parameters}
+{\em cet} & A csillapodási fázisban eltöltött idő \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain_1_1_o_s_c_a129995e4961ba7e8e4c8b8c4de5da1ee_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main\+::\+O\+SC@{main\+::\+O\+SC}!Get\+Amp@{Get\+Amp}}
+\index{Get\+Amp@{Get\+Amp}!main\+::\+O\+SC@{main\+::\+O\+SC}}
+\subsubsection[{\texorpdfstring{Get\+Amp()}{GetAmp()}}]{\setlength{\rightskip}{0pt plus 5cm}double main.\+O\+S\+C.\+Get\+Amp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_o_s_c_a367d36787d80d32bb97acbcbb62404ec}{}\label{classmain_1_1_o_s_c_a367d36787d80d32bb97acbcbb62404ec}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain_1_1_o_s_c_a367d36787d80d32bb97acbcbb62404ec_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main\+::\+O\+SC@{main\+::\+O\+SC}!Get\+Decr@{Get\+Decr}}
+\index{Get\+Decr@{Get\+Decr}!main\+::\+O\+SC@{main\+::\+O\+SC}}
+\subsubsection[{\texorpdfstring{Get\+Decr()}{GetDecr()}}]{\setlength{\rightskip}{0pt plus 5cm}int main.\+O\+S\+C.\+Get\+Decr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_o_s_c_a719b7be131c51fdbc04830b5dbd194ae}{}\label{classmain_1_1_o_s_c_a719b7be131c51fdbc04830b5dbd194ae}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain_1_1_o_s_c_a719b7be131c51fdbc04830b5dbd194ae_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main\+::\+O\+SC@{main\+::\+O\+SC}!Get\+Fout@{Get\+Fout}}
+\index{Get\+Fout@{Get\+Fout}!main\+::\+O\+SC@{main\+::\+O\+SC}}
+\subsubsection[{\texorpdfstring{Get\+Fout()}{GetFout()}}]{\setlength{\rightskip}{0pt plus 5cm}double main.\+O\+S\+C.\+Get\+Fout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_o_s_c_a037f2b301a7de8f629ee590ce3c172b3}{}\label{classmain_1_1_o_s_c_a037f2b301a7de8f629ee590ce3c172b3}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain_1_1_o_s_c_a037f2b301a7de8f629ee590ce3c172b3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main\+::\+O\+SC@{main\+::\+O\+SC}!Get\+Mode@{Get\+Mode}}
+\index{Get\+Mode@{Get\+Mode}!main\+::\+O\+SC@{main\+::\+O\+SC}}
+\subsubsection[{\texorpdfstring{Get\+Mode()}{GetMode()}}]{\setlength{\rightskip}{0pt plus 5cm}int main.\+O\+S\+C.\+Get\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_o_s_c_aa191cdd4bb6c5057fe4f71307265d697}{}\label{classmain_1_1_o_s_c_aa191cdd4bb6c5057fe4f71307265d697}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain_1_1_o_s_c_aa191cdd4bb6c5057fe4f71307265d697_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main\+::\+O\+SC@{main\+::\+O\+SC}!Linear\+Fade\+Out@{Linear\+Fade\+Out}}
+\index{Linear\+Fade\+Out@{Linear\+Fade\+Out}!main\+::\+O\+SC@{main\+::\+O\+SC}}
+\subsubsection[{\texorpdfstring{Linear\+Fade\+Out(double cet)}{LinearFadeOut(double cet)}}]{\setlength{\rightskip}{0pt plus 5cm}double main.\+O\+S\+C.\+Linear\+Fade\+Out (
+\begin{DoxyParamCaption}
+\item[{double}]{cet}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_o_s_c_a16608f6bef0ad4ddddda558f2ffce681}{}\label{classmain_1_1_o_s_c_a16608f6bef0ad4ddddda558f2ffce681}
+Lineáris csillapodás 
+\begin{DoxyParams}{Parameters}
+{\em cet} & A csillapodási fázisban eltöltött idő \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain_1_1_o_s_c_a16608f6bef0ad4ddddda558f2ffce681_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main\+::\+O\+SC@{main\+::\+O\+SC}!on\+Note\+Press@{on\+Note\+Press}}
+\index{on\+Note\+Press@{on\+Note\+Press}!main\+::\+O\+SC@{main\+::\+O\+SC}}
+\subsubsection[{\texorpdfstring{on\+Note\+Press(\+Note n)}{onNotePress(Note n)}}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void main.\+O\+S\+C.\+on\+Note\+Press (
+\begin{DoxyParamCaption}
+\item[{{\bf Note}}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_o_s_c_ac2070c794fe40e23f27a1d357bd48efb}{}\label{classmain_1_1_o_s_c_ac2070c794fe40e23f27a1d357bd48efb}
+Egy hang leütésekor hívódik meg. 
+\begin{DoxyParams}{Parameters}
+{\em n} & a leütött hang. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacemain_1_1_note_listener_a6a4c073e63cec15683cfd44ba8dc2eaa}{main.\+Note\+Listener}.
+
+\index{main\+::\+O\+SC@{main\+::\+O\+SC}!on\+Note\+Release@{on\+Note\+Release}}
+\index{on\+Note\+Release@{on\+Note\+Release}!main\+::\+O\+SC@{main\+::\+O\+SC}}
+\subsubsection[{\texorpdfstring{on\+Note\+Release(\+Note n)}{onNoteRelease(Note n)}}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void main.\+O\+S\+C.\+on\+Note\+Release (
+\begin{DoxyParamCaption}
+\item[{{\bf Note}}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_o_s_c_a7fd53cd80bc42d5d77161326cba5aa5f}{}\label{classmain_1_1_o_s_c_a7fd53cd80bc42d5d77161326cba5aa5f}
+Egy hang felengedésekor hívódik meg. 
+\begin{DoxyParams}{Parameters}
+{\em n} & A felengedett hang. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacemain_1_1_note_listener_ab6210b6ebb969095d8065c6a570909a2}{main.\+Note\+Listener}.
+
+\index{main\+::\+O\+SC@{main\+::\+O\+SC}!Read\+Audio@{Read\+Audio}}
+\index{Read\+Audio@{Read\+Audio}!main\+::\+O\+SC@{main\+::\+O\+SC}}
+\subsubsection[{\texorpdfstring{Read\+Audio(\+Audio\+Format af)}{ReadAudio(AudioFormat af)}}]{\setlength{\rightskip}{0pt plus 5cm}synchronized byte \mbox{[}$\,$\mbox{]} main.\+O\+S\+C.\+Read\+Audio (
+\begin{DoxyParamCaption}
+\item[{Audio\+Format}]{af}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_o_s_c_a8f2bb15946ac10c074cee1ea4fab03e0}{}\label{classmain_1_1_o_s_c_a8f2bb15946ac10c074cee1ea4fab03e0}
+Generál egy időrésnyi mintát. 
+\begin{DoxyParams}{Parameters}
+{\em af} & A lejátszó eszköz hangformátuma. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Egy időrésnyi minta. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfacemain_1_1_audio_output_aed68b68455b448c96d691b11de8c1630}{main.\+Audio\+Output}.
+
+\index{main\+::\+O\+SC@{main\+::\+O\+SC}!Root\+Fade\+Out@{Root\+Fade\+Out}}
+\index{Root\+Fade\+Out@{Root\+Fade\+Out}!main\+::\+O\+SC@{main\+::\+O\+SC}}
+\subsubsection[{\texorpdfstring{Root\+Fade\+Out(double cet)}{RootFadeOut(double cet)}}]{\setlength{\rightskip}{0pt plus 5cm}double main.\+O\+S\+C.\+Root\+Fade\+Out (
+\begin{DoxyParamCaption}
+\item[{double}]{cet}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_o_s_c_ac847db01151aa5613999ac8daed804ff}{}\label{classmain_1_1_o_s_c_ac847db01151aa5613999ac8daed804ff}
+Gyökös csillapodás 
+\begin{DoxyParams}{Parameters}
+{\em cet} & A csillapodási fázisban eltöltött idő \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain_1_1_o_s_c_ac847db01151aa5613999ac8daed804ff_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main\+::\+O\+SC@{main\+::\+O\+SC}!saw@{saw}}
+\index{saw@{saw}!main\+::\+O\+SC@{main\+::\+O\+SC}}
+\subsubsection[{\texorpdfstring{saw(double x)}{saw(double x)}}]{\setlength{\rightskip}{0pt plus 5cm}double main.\+O\+S\+C.\+saw (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_o_s_c_a867dfe133e42c1ab3a03563f62d8c4a1}{}\label{classmain_1_1_o_s_c_a867dfe133e42c1ab3a03563f62d8c4a1}
+Fűrészfog jelet generál 
+\begin{DoxyParams}{Parameters}
+{\em x} & Fázis (0.\+0 -\/ 2.\+0) \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain_1_1_o_s_c_a867dfe133e42c1ab3a03563f62d8c4a1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main\+::\+O\+SC@{main\+::\+O\+SC}!set\+Amp@{set\+Amp}}
+\index{set\+Amp@{set\+Amp}!main\+::\+O\+SC@{main\+::\+O\+SC}}
+\subsubsection[{\texorpdfstring{set\+Amp(double samp)}{setAmp(double samp)}}]{\setlength{\rightskip}{0pt plus 5cm}void main.\+O\+S\+C.\+set\+Amp (
+\begin{DoxyParamCaption}
+\item[{double}]{samp}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_o_s_c_a7b6e93c3e91eebd23a9cea86becef269}{}\label{classmain_1_1_o_s_c_a7b6e93c3e91eebd23a9cea86becef269}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classmain_1_1_o_s_c_a7b6e93c3e91eebd23a9cea86becef269_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain_1_1_o_s_c_a7b6e93c3e91eebd23a9cea86becef269_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main\+::\+O\+SC@{main\+::\+O\+SC}!Set\+Decr@{Set\+Decr}}
+\index{Set\+Decr@{Set\+Decr}!main\+::\+O\+SC@{main\+::\+O\+SC}}
+\subsubsection[{\texorpdfstring{Set\+Decr(int sd)}{SetDecr(int sd)}}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void main.\+O\+S\+C.\+Set\+Decr (
+\begin{DoxyParamCaption}
+\item[{int}]{sd}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_o_s_c_a5b1d6c363df4df16fd6cd40744c10d70}{}\label{classmain_1_1_o_s_c_a5b1d6c363df4df16fd6cd40744c10d70}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain_1_1_o_s_c_a5b1d6c363df4df16fd6cd40744c10d70_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main\+::\+O\+SC@{main\+::\+O\+SC}!Set\+F\+Out\+Time@{Set\+F\+Out\+Time}}
+\index{Set\+F\+Out\+Time@{Set\+F\+Out\+Time}!main\+::\+O\+SC@{main\+::\+O\+SC}}
+\subsubsection[{\texorpdfstring{Set\+F\+Out\+Time(double sft)}{SetFOutTime(double sft)}}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void main.\+O\+S\+C.\+Set\+F\+Out\+Time (
+\begin{DoxyParamCaption}
+\item[{double}]{sft}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_o_s_c_a944ad8d6279b5378c12c0c58fa465665}{}\label{classmain_1_1_o_s_c_a944ad8d6279b5378c12c0c58fa465665}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain_1_1_o_s_c_a944ad8d6279b5378c12c0c58fa465665_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main\+::\+O\+SC@{main\+::\+O\+SC}!Set\+Mode@{Set\+Mode}}
+\index{Set\+Mode@{Set\+Mode}!main\+::\+O\+SC@{main\+::\+O\+SC}}
+\subsubsection[{\texorpdfstring{Set\+Mode(int sm)}{SetMode(int sm)}}]{\setlength{\rightskip}{0pt plus 5cm}synchronized void main.\+O\+S\+C.\+Set\+Mode (
+\begin{DoxyParamCaption}
+\item[{int}]{sm}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_o_s_c_a7dc4cf1fe241cd88e0c8e4e76a223cf2}{}\label{classmain_1_1_o_s_c_a7dc4cf1fe241cd88e0c8e4e76a223cf2}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain_1_1_o_s_c_a7dc4cf1fe241cd88e0c8e4e76a223cf2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main\+::\+O\+SC@{main\+::\+O\+SC}!square@{square}}
+\index{square@{square}!main\+::\+O\+SC@{main\+::\+O\+SC}}
+\subsubsection[{\texorpdfstring{square(double x)}{square(double x)}}]{\setlength{\rightskip}{0pt plus 5cm}double main.\+O\+S\+C.\+square (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_o_s_c_ab0fd030e37c446855b53c144194a035b}{}\label{classmain_1_1_o_s_c_ab0fd030e37c446855b53c144194a035b}
+Négyszögjelet generál 
+\begin{DoxyParams}{Parameters}
+{\em x} & Fázis (0.\+0 -\/ 2.\+0) \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain_1_1_o_s_c_ab0fd030e37c446855b53c144194a035b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main\+::\+O\+SC@{main\+::\+O\+SC}!Squ\+Fade\+Out@{Squ\+Fade\+Out}}
+\index{Squ\+Fade\+Out@{Squ\+Fade\+Out}!main\+::\+O\+SC@{main\+::\+O\+SC}}
+\subsubsection[{\texorpdfstring{Squ\+Fade\+Out(double cet)}{SquFadeOut(double cet)}}]{\setlength{\rightskip}{0pt plus 5cm}double main.\+O\+S\+C.\+Squ\+Fade\+Out (
+\begin{DoxyParamCaption}
+\item[{double}]{cet}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_o_s_c_a8eaca900c304b41dfd1d8e2e747ebb62}{}\label{classmain_1_1_o_s_c_a8eaca900c304b41dfd1d8e2e747ebb62}
+Négyzetes csillapodás 
+\begin{DoxyParams}{Parameters}
+{\em cet} & A csillapodási fázisban eltöltött idő \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain_1_1_o_s_c_a8eaca900c304b41dfd1d8e2e747ebb62_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{main\+::\+O\+SC@{main\+::\+O\+SC}!triangle@{triangle}}
+\index{triangle@{triangle}!main\+::\+O\+SC@{main\+::\+O\+SC}}
+\subsubsection[{\texorpdfstring{triangle(double x)}{triangle(double x)}}]{\setlength{\rightskip}{0pt plus 5cm}double main.\+O\+S\+C.\+triangle (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain_1_1_o_s_c_afe21605a56d6899ae580e72ee5b4cf07}{}\label{classmain_1_1_o_s_c_afe21605a56d6899ae580e72ee5b4cf07}
+Háromszög jelet generál 
+\begin{DoxyParams}{Parameters}
+{\em x} & Fázis (0.\+0 -\/ 2.\+0) \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmain_1_1_o_s_c_afe21605a56d6899ae580e72ee5b4cf07_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/\hyperlink{_o_s_c_8java}{O\+S\+C.\+java}\end{DoxyCompactItemize}

@@ -1,0 +1,22 @@
+\BOOKMARK [0][-]{chapter.1}{Specifik\341ci\363}{}% 1
+\BOOKMARK [1][-]{section.1.1}{A Feladat}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Use-case}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{A megval\363s\355t\341s alap\366tlete}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{A konkr\351t terv}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Oszt\341lydiagram}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{A l\351nyegesebb funkci\363k szekvenci\341i}{chapter.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.1}{A billentyuzet kezel\351s szekvenci\341ja}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.2}{A gener\341tor \351s lecsengeto f\374ggv\351nyek \341ll\355t\341s\341nak szekvenci\341ja}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.3}{A lecseng\351si ido \341ll\355t\341sa}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.4}{A felv\351tel ind\355t\341sa, le\341ll\355t\341sa}{section.2.2}% 11
+\BOOKMARK [0][-]{chapter.3}{TeXdoclet Java Documentation}{}% 12
+\BOOKMARK [1][-]{section.3.1}{Package main}{chapter.3}% 13
+\BOOKMARK [2][-]{subsection.3.1.1}{Interface AudioOutput}{section.3.1}% 14
+\BOOKMARK [2][-]{subsection.3.1.2}{Interface NoteListener}{section.3.1}% 15
+\BOOKMARK [2][-]{subsection.3.1.3}{Class Main}{section.3.1}% 16
+\BOOKMARK [2][-]{subsection.3.1.4}{Class Mixer}{section.3.1}% 17
+\BOOKMARK [2][-]{subsection.3.1.5}{Class Note}{section.3.1}% 18
+\BOOKMARK [2][-]{subsection.3.1.6}{Class OSC}{section.3.1}% 19
+\BOOKMARK [2][-]{subsection.3.1.7}{Class VirtualKeyboard}{section.3.1}% 20
+\BOOKMARK [1][-]{section.3.2}{Package gui}{chapter.3}% 21
+\BOOKMARK [2][-]{subsection.3.2.1}{Class OscGUI}{section.3.2}% 22

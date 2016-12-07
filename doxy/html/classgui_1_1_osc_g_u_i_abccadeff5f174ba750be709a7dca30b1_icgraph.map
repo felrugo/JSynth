@@ -1,0 +1,6 @@
+<map id="gui.OscGUI.UpdeteFromOSC" name="gui.OscGUI.UpdeteFromOSC">
+<area shape="rect" id="node2" href="$classmain_1_1_main.html#aa77865e7e55ca5009c146c22e589ff3f" title="main.Main.loadState" alt="" coords="249,5,391,32"/>
+<area shape="rect" id="node3" href="$classmain_1_1_main.html#a60848a38ffd8a9fa0031588867c5cfc2" title="main.Main.buildGUI" alt="" coords="439,5,576,32"/>
+<area shape="rect" id="node4" href="$classmain_1_1_main.html#a3bd36c15a333d7b594eb71f68a938492" title="main.Main.Main" alt="" coords="624,5,739,32"/>
+<area shape="rect" id="node5" href="$classmain_1_1_main.html#a896f71a651b705304693dbfe0cf9ca63" title="main.Main.main" alt="" coords="787,5,901,32"/>
+</map>

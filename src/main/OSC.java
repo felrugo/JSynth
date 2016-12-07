@@ -2,6 +2,7 @@ package main;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.IdentityHashMap;
@@ -13,34 +14,70 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
 
+/**
+ * Ez az osztály felel a hanghullámok generálásáért.
+ * @author felrugo
+ *
+ */
 public class OSC implements NoteListener, AudioOutput {
 
-	volatile ArrayList<Note> ans;
-//	AudioFormat af;
-//	SourceDataLine sdl;
-	double amp;
-	double fin, dur, fout;
+	private transient volatile ArrayList<Note> ans;
+	private int mode, decr;
+	private double amp;
+	private double fin, dur, fout;
 	
 	
 	
-	OSC()
+	public OSC()
 	{
 		ans = new ArrayList<Note>();
-		
+		mode = decr = 0;
 		dur = -1.0;
-		fout = 1.0;
-//		af = new AudioFormat(44100, 8, 1, true, true);
-//		try {
-//			sdl = AudioSystem.getSourceDataLine(af);
-//			sdl.open(af, 2 * 441);
-//			sdl.start();
-//		} catch (LineUnavailableException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+		fout = 0.0;
+	}
+	
+	synchronized public void SetMode(int sm)
+	{
+		if(sm >= 0 && sm <= 3)
+			mode = sm;
+	}
+	
+	synchronized public void SetDecr(int sd)
+	{
+		if(sd >= 0 && sd <= 3)
+			decr = sd;
+	}
+	
+	synchronized public void SetFOutTime(double sft)
+	{
+		fout = sft;
 	}
 	
 	
+
+	public double GetAmp() {
+		return amp;
+	}
+	
+	public int GetMode()
+	{
+		return mode;
+	}
+	
+	public int GetDecr()
+	{
+		return decr;
+	}
+	
+	public double GetFout()
+	{
+		return fout;
+	}
+	
+	/**
+	 * Négyszögjelet generál
+	 * @param x Fázis (0.0 - 2.0)
+	 */
 	public double square(double x)
 		{
 		x = x % 2.0;
@@ -53,41 +90,134 @@ public class OSC implements NoteListener, AudioOutput {
 		return 0.0;
 		}
 	
-	
-	double LinearFadeOut(double cet)
+	/**
+	 * Háromszög jelet generál
+	 * @param x Fázis (0.0 - 2.0)
+	 */
+	public double triangle(double x)
 	{
-		return 1 - (cet / fout);
+		if(x <= 0.5)
+			return 2.0*x;
+		if(x > 0.5 && x <= 1.5)
+			return (-x - 1) * 2.0;
+		if(x > 1.5)
+			return (x - 2) * 2.0;
+		return 0.0;
 	}
 	
-	void setAmp(double samp)
+	
+	/**
+	 * Fűrészfog jelet generál
+	 * @param x Fázis (0.0 - 2.0)
+	 */
+	public double saw(double x)
+	{
+		if(x <= 1.0)
+			return x;
+		if(x > 1.0)
+			return (x-2.0);
+		return 0.0;
+	}
+	
+	
+	/**
+	 * Lineáris csillapodás
+	 * @param cet A csillapodási fázisban eltöltött idő
+	 */
+	public double LinearFadeOut(double cet)
+	{
+		return 1.0 - (cet / fout);
+	}
+	
+	/**
+	 * Négyzetes csillapodás
+	 * @param cet A csillapodási fázisban eltöltött idő
+	 */
+	public double SquFadeOut(double cet)
+	{
+		return 1.0 - Math.pow((cet / fout), 2.0);
+	}
+	
+	/**
+	 * Gyökös csillapodás
+	 * @param cet A csillapodási fázisban eltöltött idő
+	 */
+	public double RootFadeOut(double cet)
+	{
+		return 1.0 - Math.sqrt(cet / fout);
+	}
+	
+	/**
+	 * Kör-menti csillapodás
+	 * @param cet A csillapodási fázisban eltöltött idő
+	 */
+	public double CircFadeOut(double cet)
+	{
+		double x = cet / fout;
+		return 1 - Math.sqrt(2 * x - (x*x));
+	}
+	
+	
+	public void setAmp(double samp)
 	{
 		amp = samp;
 	}
 	
 	
+	/**
+	 * Ez a függvény a mode alapján kiválasztja a megfelelő generátort.
+	 * @param x A hanghullám jelenlegi fázisa (0.0 és 2.0 között)
+	 * @return A fázishoz tartozó érték
+	 */
+	double ModeSel(double x)
+	{
+		switch(mode)
+		{
+		case 1:
+			return square(x);
+		case 2:
+			return triangle(x);
+		case 3:
+			return saw(x);
+		default:
+			return Math.sin(Math.PI * x);
+		}
+	}
+	
+	
+	/**
+	 * Ez a függvény decr alapján kiválasztja a megfelelő csillapítást.
+	 * @param x A csillapodási fázisban eltöltött idő (max fout).
+	 * @return Az amplitudó pillanatnyi szorzóját (0.0-tól 1.0-ig).
+	 */
+	double DecrSel(double x)
+	{
+		switch(decr)
+		{
+		case 1:
+			return SquFadeOut(x);
+		case 2:
+			return RootFadeOut(x);
+		case 3:
+			return CircFadeOut(x);
+		default:
+			return LinearFadeOut(x);
+		}
+	}
+	
+	
+	/**
+	 * Generál egy időrésnyi mintát.
+	 * @param af A lejátszó eszköz hangformátuma.
+	 * @return Egy időrésnyi minta.
+	 */
 	@Override
 	public synchronized byte[] ReadAudio(AudioFormat af) {
 		
 		
 		update();
 		
-		// TODO Auto-generated method stub
-//		byte[] ret = new byte[441];
-//		
-//		Object[] narr = fis.keySet().toArray();
-//		for(int nid = 0; nid < narr.length; nid++)
-//		{
-//		Note n = (Note) narr[nid];
-//			
-//			for(int i = 0; i < 441; i++)
-//			{
-//				NoteState ns = fis.remove(n);
-//				ret[i] += (byte) (amp * square(ns.curphase));
-//				ns.curphase += 2 * n.getFreq() / af.getSampleRate();
-//				ns.curphase = ns.curphase%(2.0);
-//				ns.elstime += 0.01;
-//				fis.put(n, ns);
-//			}
+		
 		
 		byte[] ret = new byte[441];
 		for(Note n : ans)
@@ -95,9 +225,9 @@ public class OSC implements NoteListener, AudioOutput {
 			for(int i = 0; i < 441; i++)
 				{
 					if(n.sc == 1)
-						ret[i] += (byte) (amp * square(n.phase));
+						ret[i] += (byte) (amp * ModeSel(n.phase));
 					if(n.sc == 2)
-						ret[i] += (byte) (amp * LinearFadeOut(n.elst + i * 0.01 / 441.0) * square(n.phase));
+						ret[i] += (byte) (amp * DecrSel(n.elst + i * 0.01 / 441.0) * ModeSel(n.phase));
 					n.phase += 2 * n.getFreq() / af.getSampleRate();
 					n.phase = n.phase%(2.0);
 					
@@ -109,7 +239,9 @@ public class OSC implements NoteListener, AudioOutput {
 		return ret;
 	}
 	
-	
+	/**
+	 * Frissíti a lenyomott hangok állapotát.
+	 */
 	synchronized void update()
 	{
 //		if(sdl.available() >= 441)
@@ -182,6 +314,8 @@ public class OSC implements NoteListener, AudioOutput {
 		}
 		
 	}
+
+
 
 	
 

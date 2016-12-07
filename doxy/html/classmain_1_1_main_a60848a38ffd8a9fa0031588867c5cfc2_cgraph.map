@@ -1,0 +1,23 @@
+<map id="main.Main.buildGUI" name="main.Main.buildGUI">
+<area shape="rect" id="node2" href="$classmain_1_1_virtual_keyboard.html#a3769ae902b9d0070b869af65983ac3dd" title="main.VirtualKeyboard.Set\lActive" alt="" coords="433,117,603,158"/>
+<area shape="rect" id="node3" href="$classmain_1_1_main.html#af4c27d7b3cbc7694e4af163c998f76be" title="main.Main.saveState" alt="" coords="445,284,591,311"/>
+<area shape="rect" id="node8" href="$classmain_1_1_main.html#aa77865e7e55ca5009c146c22e589ff3f" title="main.Main.loadState" alt="" coords="211,360,352,387"/>
+<area shape="rect" id="node9" href="$classmain_1_1_o_s_c.html#a7b6e93c3e91eebd23a9cea86becef269" title="main.OSC.setAmp" alt="" coords="452,233,584,260"/>
+<area shape="rect" id="node21" href="$classmain_1_1_mixer.html#aa0026b5d73fbee1861e6c8bfb348ea39" title="main.Mixer.TogleRecording" alt="" coords="191,183,372,209"/>
+<area shape="rect" id="node4" href="$classmain_1_1_o_s_c.html#a367d36787d80d32bb97acbcbb62404ec" title="main.OSC.GetAmp" alt="" coords="683,360,817,387"/>
+<area shape="rect" id="node5" href="$classmain_1_1_o_s_c.html#aa191cdd4bb6c5057fe4f71307265d697" title="main.OSC.GetMode" alt="" coords="680,512,820,539"/>
+<area shape="rect" id="node6" href="$classmain_1_1_o_s_c.html#a719b7be131c51fdbc04830b5dbd194ae" title="main.OSC.GetDecr" alt="" coords="682,411,818,437"/>
+<area shape="rect" id="node7" href="$classmain_1_1_o_s_c.html#a037f2b301a7de8f629ee590ce3c172b3" title="main.OSC.GetFout" alt="" coords="683,461,817,488"/>
+<area shape="rect" id="node17" href="$classmain_1_1_o_s_c.html#a7dc4cf1fe241cd88e0c8e4e76a223cf2" title="main.OSC.SetMode" alt="" coords="449,385,587,412"/>
+<area shape="rect" id="node18" href="$classmain_1_1_o_s_c.html#a5b1d6c363df4df16fd6cd40744c10d70" title="main.OSC.SetDecr" alt="" coords="451,436,585,463"/>
+<area shape="rect" id="node19" href="$classmain_1_1_o_s_c.html#a944ad8d6279b5378c12c0c58fa465665" title="main.OSC.SetFOutTime" alt="" coords="435,335,601,361"/>
+<area shape="rect" id="node20" href="$classgui_1_1_osc_g_u_i.html#abccadeff5f174ba750be709a7dca30b1" title="gui.OscGUI.UpdeteFromOSC" alt="" coords="420,487,616,513"/>
+<area shape="rect" id="node10" href="$classmain_1_1_o_s_c.html#ab0fd030e37c446855b53c144194a035b" title="main.OSC.square" alt="" coords="687,259,813,285"/>
+<area shape="rect" id="node11" href="$classmain_1_1_o_s_c.html#afe21605a56d6899ae580e72ee5b4cf07" title="main.OSC.triangle" alt="" coords="685,309,815,336"/>
+<area shape="rect" id="node12" href="$classmain_1_1_o_s_c.html#a867dfe133e42c1ab3a03563f62d8c4a1" title="main.OSC.saw" alt="" coords="695,5,805,32"/>
+<area shape="rect" id="node13" href="$classmain_1_1_o_s_c.html#a8eaca900c304b41dfd1d8e2e747ebb62" title="main.OSC.SquFadeOut" alt="" coords="670,56,830,83"/>
+<area shape="rect" id="node14" href="$classmain_1_1_o_s_c.html#ac847db01151aa5613999ac8daed804ff" title="main.OSC.RootFadeOut" alt="" coords="667,107,833,133"/>
+<area shape="rect" id="node15" href="$classmain_1_1_o_s_c.html#a129995e4961ba7e8e4c8b8c4de5da1ee" title="main.OSC.CircFadeOut" alt="" coords="669,157,831,184"/>
+<area shape="rect" id="node16" href="$classmain_1_1_o_s_c.html#a16608f6bef0ad4ddddda558f2ffce681" title="main.OSC.LinearFadeOut" alt="" coords="664,208,836,235"/>
+<area shape="rect" id="node22" href="$classmain_1_1_main.html#a3737b9d27939cd1598e6a5d937364066" title="main.Main.GetVK" alt="" coords="455,183,581,209"/>
+</map>

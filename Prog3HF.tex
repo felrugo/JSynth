@@ -1,0 +1,70 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{inputenc}
+
+% 1. TeXDoclet output include
+\input{texdoclet_output/TeXDoclet_preamble}
+
+% use behind of TeXDoclet_preamble.tex because of option clash with pdftex
+\usepackage{fullpage} 
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,allcolors=blue,pdfpagemode=UseOutlines,pdfpagelayout=TwoPageRight
+}
+\usepackage{hypcap}
+
+\begin{document}
+	
+	\date{\today}
+	\title{JSynth dokumentáció\bigskip\\ \Large Created with Javadoc TeXDoclet Doclet}
+	\author{Szabó Bálint}
+	\maketitle
+	
+	\tableofcontents
+	
+	\chapter{Specifikáció}
+	
+	\section{A Feladat}
+	A feladat egy olyan program elkészítése, amely különböző hanghullámokat képes generálni, valós időben lejátszani és elmenteni. A felhasználó beállíthatja a hanghullám néhány jellemzőjét, mint például a hangerejét, a generáló függvényt, a lecsengés függvényét, illetve a lecsengés időtartamát.
+	\section{Use-case}
+	A fontosabb use-case-eket a következő táblázat foglalja össze: \\
+	\begin{center}
+	\begin{tabular}{|l|p{8cm}|l|}
+		\hline
+		Név & Leírás & Actor \\ \hline
+		Hang leütés & A felhasználó leüt egy billentyűt & Felhasználó \\ \hline
+		Generátor váltása & A felhasználó lecseréli a generátor függvényt & Felhasználó \\ \hline
+		Lecsengés váltása & A felhasználó lecseréli a lecsengésért felelős függvényt & Felhasználó \\ \hline
+		Lecsengés időzítése & A felhasználó beír egy lecsengési időt & Felhasnáló \\ \hline
+		Felvétel indítása, leállítása & A felhasználó egy gombbal elindítja vagy leállítja a felvételt, majd elmenti egy fájlba & Felhasználó \\ \hline
+		Állapot mentés & A felhasználó elmenti a program beállításait egy fájlba & Felhasználó \\ \hline
+	\end{tabular}
+	\end{center}
+	
+	\section{A megvalósítás alapötlete}
+	A kezelőfelület SWING-el működik. A hangerőt egy JSlider-en, a generátor és lecsengés függvényeket JComboBox-on, a lecsengés időtartamát JTextField-en lehet beállítani. A felvétel gombbal indítható, az állapot mentése a menüsávból lehetséges.
+	A hangok lejátszásáért és felvételéért a Java beépített audio könyvtára felel.
+	
+	\chapter{A konkrét terv}
+	
+	\section{Osztálydiagram}
+	\includegraphics[scale = 0.25]{cdia.png} \\
+	
+	\section{A lényegesebb funkciók szekvenciái}
+	\subsection{A billentyűzet kezelés szekvenciája}
+	\includegraphics[scale = 0.3]{note.png} \\
+	\subsection{A generátor és lecsengető függvények állításának szekvenciája}
+	\includegraphics[scale = 0.9]{genlecs.png} \\
+	\subsection{A lecsengési idő állítása}
+	\includegraphics[scale = 0.9]{ido.png} \\
+	\subsection{A felvétel indítása, leállítása}
+	\includegraphics[scale = 0.3]{record.png} \\
+	
+	
+	\chapter{TeXdoclet Java Documentation} {
+		% 2. TeXDoclet output include
+		\input{texdoclet_output/TeXDoclet}
+	}
+	
+\end{document}

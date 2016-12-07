@@ -13,16 +13,27 @@ import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
 
 public class Mixer {
 
-	ArrayList<AudioOutput> aos;
-	AudioFormat af;
-	SourceDataLine sdl;
-	ByteArrayOutputStream baos;
+	private ArrayList<AudioOutput> aos;
+	private AudioFormat af;
+	private SourceDataLine sdl;
+	private ByteArrayOutputStream baos;
+	private Main m;
+	private boolean onRec;
 	
-	Mixer()
+	/**
+	 * Konstruktor.
+	 * @param m A főablak osztályát várja.
+	 */
+	public Mixer(Main m)
 	{
+		this.m = m;
+		onRec = false;
+		baos = new ByteArrayOutputStream();
 		aos = new ArrayList<AudioOutput>();
 		af = new AudioFormat(44100, 8, 1, true, true);
 		try {
@@ -36,38 +47,55 @@ public class Mixer {
 	}
 	
 	
+	/**
+	 * Beregisztrál egy forrást.
+	 * @param e A regisztrálandó forrás.
+	 */
 	void RegisterAO(AudioOutput e)
 	{
 		aos.add(e);
 	}
 	
 	
-	void StartRecording(File rf)
+	/**
+	 * Elindítja/megállítja a felvételt.
+	 */
+	public void TogleRecording()
 	{
-		if(baos == null)
+		if(onRec == false)
 		{
-			baos = new ByteArrayOutputStream();
+			onRec = true;
 		}
-	}
-	
-	
-	void StopRecording()
-	{
-		if(baos != null)
+		else
 		{
-			ByteArrayInputStream bais = new ByteArrayInputStream(baos.toByteArray());
-			AudioInputStream ais = new AudioInputStream(bais, af, baos.size());
-			try {
-				AudioSystem.write(ais, AudioFileFormat.Type.WAVE, new File("Test.wav"));
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+			onRec = false;
+			m.GetVK().SetActive(false);
+			JFileChooser fileChooser = new JFileChooser();
+			if (fileChooser.showSaveDialog(m) == JFileChooser.APPROVE_OPTION) {
+			  File file = fileChooser.getSelectedFile();
+			  // save to file
+			  ByteArrayInputStream bais = new ByteArrayInputStream(baos.toByteArray());
+				AudioInputStream ais = new AudioInputStream(bais, af, baos.size());
+				try {
+					AudioSystem.write(ais, AudioFileFormat.Type.WAVE, file);
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
+			m.GetVK().SetActive(true);
+			baos.reset();	
+			
 		}
 	}
 	
 	
-	void update()
+	
+	
+	/**
+	 * A főciklus, ez felel az ütemezésért.
+	 */
+	public void update()
 	{
 		if(sdl.available() >= 441)
 		{
@@ -83,7 +111,7 @@ public class Mixer {
 			}
 			sdl.write(buff, 0, buff.length);
 			
-			if(baos != null)
+			if(onRec)
 			{
 				baos.write(buff, 0, buff.length);
 			}

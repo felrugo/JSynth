@@ -1,0 +1,7 @@
+<map id="main.OSC.RootFadeOut" name="main.OSC.RootFadeOut">
+<area shape="rect" id="node2" href="$classmain_1_1_o_s_c.html#a7b6e93c3e91eebd23a9cea86becef269" title="main.OSC.setAmp" alt="" coords="219,31,351,57"/>
+<area shape="rect" id="node3" href="$classmain_1_1_main.html#aa77865e7e55ca5009c146c22e589ff3f" title="main.Main.loadState" alt="" coords="399,5,540,32"/>
+<area shape="rect" id="node4" href="$classmain_1_1_main.html#a60848a38ffd8a9fa0031588867c5cfc2" title="main.Main.buildGUI" alt="" coords="588,31,725,57"/>
+<area shape="rect" id="node5" href="$classmain_1_1_main.html#a3bd36c15a333d7b594eb71f68a938492" title="main.Main.Main" alt="" coords="773,31,888,57"/>
+<area shape="rect" id="node6" href="$classmain_1_1_main.html#a896f71a651b705304693dbfe0cf9ca63" title="main.Main.main" alt="" coords="936,31,1051,57"/>
+</map>

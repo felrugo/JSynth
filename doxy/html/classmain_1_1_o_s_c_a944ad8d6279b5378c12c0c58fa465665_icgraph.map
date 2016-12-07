@@ -1,0 +1,9 @@
+<map id="main.OSC.SetFOutTime" name="main.OSC.SetFOutTime">
+<area shape="rect" id="node2" href="$classgui_1_1_osc_g_u_i.html#a6ccc1fa520df7f2da8a9e67523d3318b" title="gui.OscGUI.insertUpdate" alt="" coords="227,5,397,32"/>
+<area shape="rect" id="node3" href="$classgui_1_1_osc_g_u_i.html#a57a891a89e6492ae61f4ad42f1b5eb55" title="gui.OscGUI.removeUpdate" alt="" coords="222,56,402,83"/>
+<area shape="rect" id="node4" href="$classgui_1_1_osc_g_u_i.html#a843603b3f1cc7b67d714fc3ff805b69a" title="gui.OscGUI.changedUpdate" alt="" coords="219,107,405,133"/>
+<area shape="rect" id="node5" href="$classmain_1_1_main.html#aa77865e7e55ca5009c146c22e589ff3f" title="main.Main.loadState" alt="" coords="241,157,383,184"/>
+<area shape="rect" id="node6" href="$classmain_1_1_main.html#a60848a38ffd8a9fa0031588867c5cfc2" title="main.Main.buildGUI" alt="" coords="453,157,591,184"/>
+<area shape="rect" id="node7" href="$classmain_1_1_main.html#a3bd36c15a333d7b594eb71f68a938492" title="main.Main.Main" alt="" coords="639,157,753,184"/>
+<area shape="rect" id="node8" href="$classmain_1_1_main.html#a896f71a651b705304693dbfe0cf9ca63" title="main.Main.main" alt="" coords="801,157,916,184"/>
+</map>

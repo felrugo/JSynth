@@ -1,0 +1,8 @@
+<map id="main.Main" name="main.Main">
+<area shape="rect" id="node3" href="$classmain_1_1_virtual_keyboard.html" title="main.VirtualKeyboard" alt="" coords="409,128,556,155"/>
+<area shape="rect" id="node4" href="$classmain_1_1_o_s_c.html" title="main.OSC" alt="" coords="205,277,288,304"/>
+<area shape="rect" id="node8" href="$classgui_1_1_osc_g_u_i.html" title="gui.OscGUI" alt="" coords="437,179,528,205"/>
+<area shape="rect" id="node5" href="$interfacemain_1_1_note_listener.html" title="main.NoteListener" alt="" coords="5,227,133,253"/>
+<area shape="rect" id="node6" href="$interfacemain_1_1_audio_output.html" title="main.AudioOutput" alt="" coords="6,277,133,304"/>
+<area shape="rect" id="node14" href="$classmain_1_1_mixer.html" title="main.Mixer" alt="" coords="439,359,526,385"/>
+</map>

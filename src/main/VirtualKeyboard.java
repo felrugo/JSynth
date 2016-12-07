@@ -10,13 +10,24 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeSet;
 
+/**
+ * Osztály a billentyűzet kezeléshez. A billentyűzet bevitelét hangbevitellé alakítja.
+ * @author felrugo
+ *
+ */
 public class VirtualKeyboard {
 
-	volatile HashSet<NoteListener> nls;
-	volatile TreeSet<Note> pressed;
+	private volatile HashSet<NoteListener> nls;
+	private volatile TreeSet<Note> pressed;
+	private boolean active;
 	
-	VirtualKeyboard()
+	
+	/**
+	 * Konstruktor.
+	 */
+	public VirtualKeyboard()
 	{
+		active = true;
 		nls = new HashSet<NoteListener>();
 		pressed = new TreeSet<Note>();
 		
@@ -25,7 +36,8 @@ public class VirtualKeyboard {
 		  .addKeyEventDispatcher(new KeyEventDispatcher() {
 		      @Override
 		      public boolean dispatchKeyEvent(KeyEvent e) {
-		        switch(e.getID())
+		        if(active)
+		    	 switch(e.getID())
 		        {
 		        case KeyEvent.KEY_PRESSED:
 		        	keyPressed(e);
@@ -34,12 +46,26 @@ public class VirtualKeyboard {
 		        	keyReleased(e);
 		        	break;
 		        default:
-		        	e.consume();
+		        	break;
 		        }
 		        return false;
 		      }
 		});
 		
+	}
+	
+	/**
+	 * Aktiválja a billentyűk elkapását.(alapból aktív)
+	 * @param set A beállítandó érték.
+	 */
+	public void SetActive(boolean set)
+	{
+		active = set;
+	}
+	
+	public boolean isActive()
+	{
+		return active;
 	}
 	
 	
@@ -166,7 +192,11 @@ public class VirtualKeyboard {
 		
 	}
 	
-	void RegisterNoteListener(NoteListener nl)
+	/**
+	 * Beregisztrál egy hang leütés figyelőt.
+	 * @param nl A figyelő.
+	 */
+	public void RegisterNoteListener(NoteListener nl)
 	{
 		nls.add(nl);
 	}

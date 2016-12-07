@@ -1,0 +1,9 @@
+<map id="main.OSC.setAmp" name="main.OSC.setAmp">
+<area shape="rect" id="node2" href="$classmain_1_1_o_s_c.html#ab0fd030e37c446855b53c144194a035b" title="main.OSC.square" alt="" coords="208,5,335,32"/>
+<area shape="rect" id="node3" href="$classmain_1_1_o_s_c.html#afe21605a56d6899ae580e72ee5b4cf07" title="main.OSC.triangle" alt="" coords="207,56,336,83"/>
+<area shape="rect" id="node4" href="$classmain_1_1_o_s_c.html#a867dfe133e42c1ab3a03563f62d8c4a1" title="main.OSC.saw" alt="" coords="216,107,327,133"/>
+<area shape="rect" id="node5" href="$classmain_1_1_o_s_c.html#a8eaca900c304b41dfd1d8e2e747ebb62" title="main.OSC.SquFadeOut" alt="" coords="191,157,351,184"/>
+<area shape="rect" id="node6" href="$classmain_1_1_o_s_c.html#ac847db01151aa5613999ac8daed804ff" title="main.OSC.RootFadeOut" alt="" coords="189,208,354,235"/>
+<area shape="rect" id="node7" href="$classmain_1_1_o_s_c.html#a129995e4961ba7e8e4c8b8c4de5da1ee" title="main.OSC.CircFadeOut" alt="" coords="191,259,352,285"/>
+<area shape="rect" id="node8" href="$classmain_1_1_o_s_c.html#a16608f6bef0ad4ddddda558f2ffce681" title="main.OSC.LinearFadeOut" alt="" coords="185,309,357,336"/>
+</map>

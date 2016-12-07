@@ -1,7 +1,12 @@
 package main;
 
+/**
+ * A hangjegyek osztálya
+ * @author felrugo
+ *
+ */
 public class Note implements Comparable {
-	static double[] nullfreqs = { 16.35, 17.32, 18.35, 19.45, 20.60, 21.83, 23.12, 24.50, 25.96, 27.50, 29.14, 30.87 };
+static double[] nullfreqs = { 16.35, 17.32, 18.35, 19.45, 20.60, 21.83, 23.12, 24.50, 25.96, 27.50, 29.14, 30.87 };
 double freq;
 double elst;
 double phase;
@@ -9,7 +14,13 @@ int sc;
 String name;
 int oct;
 
-	Note(String name, int oct)
+	
+	/**
+	 * Konstruktor. A hang neve és oktávszáma alapján kiszámolja a frekvenciát.
+	 * @param name A hang neve.
+	 * @param oct A hang oktávszáma.
+	 */
+	public Note(String name, int oct)
 	{
 		this.name = name;
 		this.oct = oct;
@@ -59,17 +70,26 @@ int oct;
 		freq *= 2;
 	}
 	
+	/**
+	 * Függvény az összehasonlításhoz.
+	 * Két hang akkor egyenló, ha a neve és az oktávszáma megegyezik(azaz a frekvenciája).
+	 */
+	@Override
 	public boolean equals(Object o)
 	{
 		Note on = (Note) o;
 		return this.name.equals(on.name) && this.oct == on.oct;
 	}
 	
-	double getFreq()
+	public double getFreq()
 	{
 		return freq;
 	}
 
+	/**
+	 * Függvény az összehasonlításhoz.
+	 * A hang akkor nagyobb B-nél, ha A frekvenciája nagyobb a B-énél.
+	 */
 	@Override
 	public int compareTo(Object o) {
 		// TODO Auto-generated method stub

@@ -1,0 +1,4 @@
+<map id="main.OSC" name="main.OSC">
+<area shape="rect" id="node2" href="$interfacemain_1_1_note_listener.html" title="main.NoteListener" alt="" coords="5,5,133,32"/>
+<area shape="rect" id="node3" href="$interfacemain_1_1_audio_output.html" title="main.AudioOutput" alt="" coords="158,5,285,32"/>
+</map>

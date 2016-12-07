@@ -1,0 +1,5 @@
+<map id="gui.OscGUI.UpdeteFromOSC" name="gui.OscGUI.UpdeteFromOSC">
+<area shape="rect" id="node2" href="$classmain_1_1_o_s_c.html#aa191cdd4bb6c5057fe4f71307265d697" title="main.OSC.GetMode" alt="" coords="249,5,389,32"/>
+<area shape="rect" id="node3" href="$classmain_1_1_o_s_c.html#a719b7be131c51fdbc04830b5dbd194ae" title="main.OSC.GetDecr" alt="" coords="251,56,387,83"/>
+<area shape="rect" id="node4" href="$classmain_1_1_o_s_c.html#a037f2b301a7de8f629ee590ce3c172b3" title="main.OSC.GetFout" alt="" coords="252,107,387,133"/>
+</map>

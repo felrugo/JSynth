@@ -1,0 +1,26 @@
+<map id="main.Main.main" name="main.Main.main">
+<area shape="rect" id="node2" href="$classmain_1_1_main.html#a3bd36c15a333d7b594eb71f68a938492" title="main.Main.Main" alt="" coords="168,259,283,285"/>
+<area shape="rect" id="node3" href="$classmain_1_1_main.html#a60848a38ffd8a9fa0031588867c5cfc2" title="main.Main.buildGUI" alt="" coords="331,233,468,260"/>
+<area shape="rect" id="node25" href="$classmain_1_1_mixer.html#a3b24597b6e9ea05262b76d99b77b07aa" title="main.Mixer.update" alt="" coords="335,284,464,311"/>
+<area shape="rect" id="node4" href="$classmain_1_1_virtual_keyboard.html#a3769ae902b9d0070b869af65983ac3dd" title="main.VirtualKeyboard.Set\lActive" alt="" coords="758,117,929,158"/>
+<area shape="rect" id="node5" href="$classmain_1_1_main.html#af4c27d7b3cbc7694e4af163c998f76be" title="main.Main.saveState" alt="" coords="771,284,916,311"/>
+<area shape="rect" id="node10" href="$classmain_1_1_main.html#aa77865e7e55ca5009c146c22e589ff3f" title="main.Main.loadState" alt="" coords="536,360,677,387"/>
+<area shape="rect" id="node11" href="$classmain_1_1_o_s_c.html#a7b6e93c3e91eebd23a9cea86becef269" title="main.OSC.setAmp" alt="" coords="777,233,909,260"/>
+<area shape="rect" id="node23" href="$classmain_1_1_mixer.html#aa0026b5d73fbee1861e6c8bfb348ea39" title="main.Mixer.TogleRecording" alt="" coords="516,183,697,209"/>
+<area shape="rect" id="node6" href="$classmain_1_1_o_s_c.html#a367d36787d80d32bb97acbcbb62404ec" title="main.OSC.GetAmp" alt="" coords="1008,360,1143,387"/>
+<area shape="rect" id="node7" href="$classmain_1_1_o_s_c.html#aa191cdd4bb6c5057fe4f71307265d697" title="main.OSC.GetMode" alt="" coords="1005,512,1145,539"/>
+<area shape="rect" id="node8" href="$classmain_1_1_o_s_c.html#a719b7be131c51fdbc04830b5dbd194ae" title="main.OSC.GetDecr" alt="" coords="1007,411,1143,437"/>
+<area shape="rect" id="node9" href="$classmain_1_1_o_s_c.html#a037f2b301a7de8f629ee590ce3c172b3" title="main.OSC.GetFout" alt="" coords="1008,461,1143,488"/>
+<area shape="rect" id="node19" href="$classmain_1_1_o_s_c.html#a7dc4cf1fe241cd88e0c8e4e76a223cf2" title="main.OSC.SetMode" alt="" coords="774,385,913,412"/>
+<area shape="rect" id="node20" href="$classmain_1_1_o_s_c.html#a5b1d6c363df4df16fd6cd40744c10d70" title="main.OSC.SetDecr" alt="" coords="776,436,911,463"/>
+<area shape="rect" id="node21" href="$classmain_1_1_o_s_c.html#a944ad8d6279b5378c12c0c58fa465665" title="main.OSC.SetFOutTime" alt="" coords="761,335,926,361"/>
+<area shape="rect" id="node22" href="$classgui_1_1_osc_g_u_i.html#abccadeff5f174ba750be709a7dca30b1" title="gui.OscGUI.UpdeteFromOSC" alt="" coords="745,487,941,513"/>
+<area shape="rect" id="node12" href="$classmain_1_1_o_s_c.html#ab0fd030e37c446855b53c144194a035b" title="main.OSC.square" alt="" coords="1012,259,1139,285"/>
+<area shape="rect" id="node13" href="$classmain_1_1_o_s_c.html#afe21605a56d6899ae580e72ee5b4cf07" title="main.OSC.triangle" alt="" coords="1011,309,1140,336"/>
+<area shape="rect" id="node14" href="$classmain_1_1_o_s_c.html#a867dfe133e42c1ab3a03563f62d8c4a1" title="main.OSC.saw" alt="" coords="1020,5,1131,32"/>
+<area shape="rect" id="node15" href="$classmain_1_1_o_s_c.html#a8eaca900c304b41dfd1d8e2e747ebb62" title="main.OSC.SquFadeOut" alt="" coords="995,56,1155,83"/>
+<area shape="rect" id="node16" href="$classmain_1_1_o_s_c.html#ac847db01151aa5613999ac8daed804ff" title="main.OSC.RootFadeOut" alt="" coords="993,107,1158,133"/>
+<area shape="rect" id="node17" href="$classmain_1_1_o_s_c.html#a129995e4961ba7e8e4c8b8c4de5da1ee" title="main.OSC.CircFadeOut" alt="" coords="995,157,1156,184"/>
+<area shape="rect" id="node18" href="$classmain_1_1_o_s_c.html#a16608f6bef0ad4ddddda558f2ffce681" title="main.OSC.LinearFadeOut" alt="" coords="989,208,1161,235"/>
+<area shape="rect" id="node24" href="$classmain_1_1_main.html#a3737b9d27939cd1598e6a5d937364066" title="main.Main.GetVK" alt="" coords="781,183,906,209"/>
+</map>

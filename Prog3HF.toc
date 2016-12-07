@@ -1,0 +1,58 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Specifik\IeC {\'a}ci\IeC {\'o}}{2}{chapter.1}
+\contentsline {section}{\numberline {1.1}A Feladat}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Use-case}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}A megval\IeC {\'o}s\IeC {\'\i }t\IeC {\'a}s alap\IeC {\"o}tlete}{2}{section.1.3}
+\contentsline {chapter}{\numberline {2}A konkr\IeC {\'e}t terv}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Oszt\IeC {\'a}lydiagram}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}A l\IeC {\'e}nyegesebb funkci\IeC {\'o}k szekvenci\IeC {\'a}i}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}A billenty\IeC {\H u}zet kezel\IeC {\'e}s szekvenci\IeC {\'a}ja}{4}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}A gener\IeC {\'a}tor \IeC {\'e}s lecsenget\IeC {\H o} f\IeC {\"u}ggv\IeC {\'e}nyek \IeC {\'a}ll\IeC {\'\i }t\IeC {\'a}s\IeC {\'a}nak szekvenci\IeC {\'a}ja}{5}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}A lecseng\IeC {\'e}si id\IeC {\H o} \IeC {\'a}ll\IeC {\'\i }t\IeC {\'a}sa}{5}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}A felv\IeC {\'e}tel ind\IeC {\'\i }t\IeC {\'a}sa, le\IeC {\'a}ll\IeC {\'\i }t\IeC {\'a}sa}{6}{subsection.2.2.4}
+\contentsline {chapter}{\numberline {3}TeXdoclet Java Documentation}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Package main}{7}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Interface AudioOutput}{7}{subsection.3.1.1}
+\contentsline {subsubsection}{Declaration}{7}{section*.2}
+\contentsline {subsubsection}{All known subinterfaces}{7}{section*.3}
+\contentsline {subsubsection}{All classes known to implement interface}{8}{section*.4}
+\contentsline {subsubsection}{Methods}{8}{section*.5}
+\contentsline {subsection}{\numberline {3.1.2}Interface NoteListener}{8}{subsection.3.1.2}
+\contentsline {subsubsection}{Declaration}{8}{section*.6}
+\contentsline {subsubsection}{All known subinterfaces}{8}{section*.7}
+\contentsline {subsubsection}{All classes known to implement interface}{8}{section*.8}
+\contentsline {subsubsection}{Methods}{8}{section*.9}
+\contentsline {subsection}{\numberline {3.1.3}Class Main}{9}{subsection.3.1.3}
+\contentsline {subsubsection}{Declaration}{9}{section*.10}
+\contentsline {subsubsection}{Constructors}{9}{section*.11}
+\contentsline {subsubsection}{Methods}{9}{section*.12}
+\contentsline {subsubsection}{Members inherited from class JFrame }{10}{section*.13}
+\contentsline {subsubsection}{Members inherited from class Frame }{10}{section*.14}
+\contentsline {subsubsection}{Members inherited from class Window }{11}{section*.15}
+\contentsline {subsubsection}{Members inherited from class Container }{11}{section*.16}
+\contentsline {subsubsection}{Members inherited from class Component }{11}{section*.17}
+\contentsline {subsection}{\numberline {3.1.4}Class Mixer}{12}{subsection.3.1.4}
+\contentsline {subsubsection}{Declaration}{12}{section*.18}
+\contentsline {subsubsection}{Constructors}{12}{section*.19}
+\contentsline {subsubsection}{Methods}{13}{section*.20}
+\contentsline {subsection}{\numberline {3.1.5}Class Note}{13}{subsection.3.1.5}
+\contentsline {subsubsection}{Declaration}{13}{section*.21}
+\contentsline {subsubsection}{Constructors}{13}{section*.22}
+\contentsline {subsubsection}{Methods}{13}{section*.23}
+\contentsline {subsection}{\numberline {3.1.6}Class OSC}{14}{subsection.3.1.6}
+\contentsline {subsubsection}{Declaration}{14}{section*.24}
+\contentsline {subsubsection}{Constructors}{14}{section*.25}
+\contentsline {subsubsection}{Methods}{14}{section*.26}
+\contentsline {subsection}{\numberline {3.1.7}Class VirtualKeyboard}{17}{subsection.3.1.7}
+\contentsline {subsubsection}{Declaration}{17}{section*.27}
+\contentsline {subsubsection}{Constructors}{17}{section*.28}
+\contentsline {subsubsection}{Methods}{18}{section*.29}
+\contentsline {section}{\numberline {3.2}Package gui}{19}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Class OscGUI}{19}{subsection.3.2.1}
+\contentsline {subsubsection}{Declaration}{19}{section*.30}
+\contentsline {subsubsection}{Constructors}{19}{section*.31}
+\contentsline {subsubsection}{Methods}{19}{section*.32}
+\contentsline {subsubsection}{Members inherited from class JPanel }{20}{section*.33}
+\contentsline {subsubsection}{Members inherited from class JComponent }{20}{section*.34}
+\contentsline {subsubsection}{Members inherited from class Container }{20}{section*.35}
+\contentsline {subsubsection}{Members inherited from class Component }{21}{section*.36}

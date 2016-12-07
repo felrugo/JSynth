@@ -1,0 +1,6 @@
+<map id="main.Main.saveState" name="main.Main.saveState">
+<area shape="rect" id="node2" href="$classmain_1_1_o_s_c.html#a367d36787d80d32bb97acbcbb62404ec" title="main.OSC.GetAmp" alt="" coords="201,5,336,32"/>
+<area shape="rect" id="node3" href="$classmain_1_1_o_s_c.html#aa191cdd4bb6c5057fe4f71307265d697" title="main.OSC.GetMode" alt="" coords="199,56,339,83"/>
+<area shape="rect" id="node4" href="$classmain_1_1_o_s_c.html#a719b7be131c51fdbc04830b5dbd194ae" title="main.OSC.GetDecr" alt="" coords="201,107,337,133"/>
+<area shape="rect" id="node5" href="$classmain_1_1_o_s_c.html#a037f2b301a7de8f629ee590ce3c172b3" title="main.OSC.GetFout" alt="" coords="201,157,336,184"/>
+</map>

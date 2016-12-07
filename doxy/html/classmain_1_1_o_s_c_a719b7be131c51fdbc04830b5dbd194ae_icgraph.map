@@ -1,0 +1,8 @@
+<map id="main.OSC.GetDecr" name="main.OSC.GetDecr">
+<area shape="rect" id="node2" href="$classgui_1_1_osc_g_u_i.html#abccadeff5f174ba750be709a7dca30b1" title="gui.OscGUI.UpdeteFromOSC" alt="" coords="189,5,385,32"/>
+<area shape="rect" id="node7" href="$classmain_1_1_main.html#af4c27d7b3cbc7694e4af163c998f76be" title="main.Main.saveState" alt="" coords="433,56,579,83"/>
+<area shape="rect" id="node3" href="$classmain_1_1_main.html#aa77865e7e55ca5009c146c22e589ff3f" title="main.Main.loadState" alt="" coords="435,5,577,32"/>
+<area shape="rect" id="node4" href="$classmain_1_1_main.html#a60848a38ffd8a9fa0031588867c5cfc2" title="main.Main.buildGUI" alt="" coords="627,31,764,57"/>
+<area shape="rect" id="node5" href="$classmain_1_1_main.html#a3bd36c15a333d7b594eb71f68a938492" title="main.Main.Main" alt="" coords="812,31,927,57"/>
+<area shape="rect" id="node6" href="$classmain_1_1_main.html#a896f71a651b705304693dbfe0cf9ca63" title="main.Main.main" alt="" coords="975,31,1089,57"/>
+</map>
