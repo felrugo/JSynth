@@ -21,7 +21,7 @@ public class OSCTest {
 		boolean over = false;
 		for(int i = 0; i < 20000; i++)
 		{
-			if(to.triangle(i / 10000.0) > 1.0)
+			if(Math.abs(to.triangle(i / 10000.0)) > 1.0)
 				over = true;
 		}
 		assertFalse(over);
